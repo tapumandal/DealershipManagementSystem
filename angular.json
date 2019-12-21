@@ -26,7 +26,21 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/home/lib/jquery/jquery.min.js",
+              "src/assets/home/lib/jquery/jquery-migrate.min.js",
+              "src/assets/home/lib/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/home/lib/easing/easing.min.js",
+              "src/assets/home/lib/mobile-nav/mobile-nav.js",
+              "src/assets/home/lib/wow/wow.min.js",
+              "src/assets/home/lib/waypoints/waypoints.min.js",
+              "src/assets/home/lib/counterup/counterup.min.js",
+              "src/assets/home/lib/owlcarousel/owl.carousel.min.js",
+              "src/assets/home/lib/isotope/isotope.pkgd.min.js",
+              "src/assets/home/lib/lightbox/js/lightbox.min.js",
+              "src/assets/home/contactform/contactform.js",
+              "src/assets/home/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
