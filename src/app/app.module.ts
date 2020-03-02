@@ -7,20 +7,33 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './user_management/login/login.module';
 import { RegistrationModule } from './user_management/registration/registration.module';
+import { HeaderComponent } from './controller/header/header.component';
+import { DashboardComponent } from './controller/business/dashboard/dashboard.component';
+
+import { fakeBackendProvider } from "./_healpers";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
-    AppComponent
-    // HomeComponent
+    AppComponent,
+    HeaderComponent,
+    DashboardComponent,
+    // HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     LoginModule,
-    RegistrationModule
+    RegistrationModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    fakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
